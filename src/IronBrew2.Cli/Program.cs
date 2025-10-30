@@ -1,2 +1,22 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using IronBrew2.Obfuscator;
+
+namespace IronBrew2.Cli;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        if (Directory.Exists("temp"))
+            Directory.Delete("temp", true);
+        Directory.CreateDirectory("temp");
+        if (!IB2.Obfuscate("temp", args[0], new ObfuscationSettings(), out string err))
+        {
+            Console.WriteLine("ERR: " + err);
+            return;
+        }
+
+        File.Delete("out.lua");
+        File.Move("temp/out.lua", "out.lua");
+        Console.WriteLine("Done!");
+    }
+}

@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronBrew2", "src\IronBrew2\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronBrew2.Cli", "src\IronBrew2.Cli\IronBrew2.Cli.csproj", "{05E89445-2ADA-47AE-B894-8422E84B55E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronBrew2.Tests", "src\IronBrew2.Tests\IronBrew2.Tests.csproj", "{B4672293-B664-40DF-B949-9CE0046AEA13}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
